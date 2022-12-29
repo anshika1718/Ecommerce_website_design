@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- style.css  -->
+    <link href="assests/styles/style.css" rel="stylesheet">
+    <link href="assests/styles/bootstrap.css" rel="stylesheet">
+    <link href="assests/styles/fontawesome_pro_v5.13/css/all.min.css" rel="stylesheet">
+
+    <title>E-Commerce</title>
+</head>
+
+<body id="top">
+    <!-- ==============header menu section starts here============== -->
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3  ">
+                <a class="navbar-brand pl-5" href="javascript:;">
+                    <img src="assests/img/logo.png" class="img img-fluid" width="120px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+                    </ul>
+                    <div class="search mr-3">
+                        <a href="search.html" class="btn btn-sm btn-outline-primary">
+                            Search
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                            <span class="badge badge-pill badge-primary">24</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- ==============header menu section ends here============== -->
+
+    <!-- ==============contact starts here============== -->
+    <section class="contact py-5 my-5" id="contact">
+        <div class="container ">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">Contact Us</h1>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-4 col-12">
+                    <div class="border border-success rounded shadow text-center p-3">
+                        <div class="mb-4">
+                            <i class="fas fa-phone-alt fa-3x"></i>
+                        </div>
+                        <div>
+                            <h3>Let's Talk</h3>
+                            <p><b>Phone:</b> +91-7003528181</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="border border-success rounded shadow text-center p-3">
+                        <div class="mb-4">
+                            <i class="fas fa-envelope-open fa-3x"></i>
+                        </div>
+                        <div>
+                            <h3>Drop a Line</h3>
+                            <p><b>Email:</b> xyz@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="border border-success rounded shadow text-center p-3">
+                        <div class="mb-4">
+                            <i class="far fa-life-ring fa-3x"></i>
+                        </div>
+                        <div>
+                            <h3>24x7 Support</h3>
+                            <p><b>Customer:</b> 1800 208 9898</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-10 mx-auto mb-3 my-5 py-5 border shadow">
+                    <h3 class="text-center mb-3">Form</h3>
+                    <form action="contact.html" method="POST" id="form" onsubmit="return formValidation();">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input name="name" id="name" type="text" placeholder="Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input name="email" id="email" type="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="msg" id="msg" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============contact ends here============== -->
+
+    <!-- ==============footer starts here============== -->
+    <section class="footer_section pt-5 pb-2 mt-5" id="footer_section">
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-6 pl-5">
+                        <div class="footer_title">
+                            <img src="assests/img/logo.png" width="150px" class="img img-fluid" alt="logo">
+                        </div>
+                        <div>
+                            Vill- Dakshin Gopalpur, P.O.- Panskura, Dist- Purba Medinipur, State- West Bengal, Pin- 721139, IN
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">About</a></li>
+                                <li><a href="javascript:;">Offers & Discounts</a></li>
+                                <li><a href="javascript:;">Get Coupon</a></li>
+                                <li><a href="javascript:;">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>New Products</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Woman Cloth</a></li>
+                                <li><a href="javascript:;">Fashion Accessories</a></li>
+                                <li><a href="javascript:;">Man Accessories</a></li>
+                                <li><a href="javascript:;">Rubber made Toys</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="footer_title pt-3 mb-3">
+                            <h3>Support</h3>
+                        </div>
+                        <div class="footer_links">
+                            <ul>
+                                <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                                <li><a href="javascript:;">Terms & Conditions</a></li>
+                                <li><a href="javascript:;">Privacy Policy</a></li>
+                                <li><a href="javascript:;">Report a Payment Issue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top">
+                <h6 class="text-center mt-3">Copyright ©2020 All rights reserved
+                </h6>
+            </div>
+        </footer>
+    </section>
+    <div class="backtop">
+        <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+            <i class="fas fa-chevron-up text-dark"></i>
+        </a>
+    </div>
+    <!-- ==============footer ends here============== -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assests/scripts/jquery.min.js"></script>
+    <script src="assests/scripts/bootstrap.js"></script>
+</body>
+
+</html>
+<script>
+
+    //form validation with javascript
+    function formValidation()
+    {
+        //Get Value
+        var name = document.getElementById('name').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var msg = document.getElementById('msg').value.trim();
+
+        var isValidForm = true;       
+
+        //Validation Conditions here
+        if (name.length < 1) {
+            alert("Name is Required!");
+            var isValidForm = false;
+        }       
+        else if (email.length < 1) {
+            alert("Email is Required!");
+            var isValidForm = false;
+        } 
+        else if (msg.length < 1) {
+            alert("Message is Required!");
+            var isValidForm = false;
+        }
+        else
+        {
+            isValidForm = true;
+        }
+
+        return isValidForm;  //if isValidForm is true then form submits else submission is stopped
+        
+    }
+
+    /*
+    //Form validation with Jquery and JavaScript
+    $(document).ready(function () {
+
+        $('#form').submit(function (e) {
+
+            //Get Value
+            var name = $('#name').val().trim();
+            var email = $('#email').val().trim();
+            var msg = $('#msg').val().trim();
+
+            //reset the errors
+            $(".error").remove();
+
+            var isValidForm = true; 
+
+            //Validation Conditions here
+            if (name.length < 1) {
+                $('#name').after('<span class="error">This field is required</span>');
+                var isValidForm = false;
+            }
+            
+            if (email.length < 1) {
+                $('#email').after('<span class="error">This field is required</span>');
+                var isValidForm = false;
+            } 
+
+            if (msg.length < 1) {
+                $('#msg').after('<span class="error">This field is required</span>');
+                var isValidForm = false;
+            }
+
+            return isValidForm;  //if isValidForm is true then form submits else submission is stopped
+                     
+        });
+
+    });*/
+
+</script>
